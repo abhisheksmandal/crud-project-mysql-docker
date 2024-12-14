@@ -1,0 +1,51 @@
+# Create project directory
+
+mkdir crud-project
+cd crud-project
+
+# Create frontend with Vite
+
+npm create vite@latest frontend -- --template react
+cd frontend
+npm install
+npm install axios react-router-dom
+
+# Create backend directory
+
+cd ..
+mkdir backend
+cd backend
+npm init -y
+npm install express mysql2 cors dotenv body-parser
+
+######################################################
+
+# In backend directory
+
+npm init -f
+npm install express mysql2 cors dotenv body-parser
+npx nodemon server.js # Recommended for development
+
+# In frontend directory
+
+npm install
+npm install tailwindcss postcss autoprefixer
+npx tailwindcss init -p # For Tailwind CSS setup
+npm run dev
+
+######################################################
+
+# If using Docker Compose
+
+docker-compose up -d
+
+# Alternative Docker run command
+
+docker run -d \
+    --name \
+    MYSQL_ROOT_PASSWORD= \
+    MYSQL_DATABASE= \
+    MYSQL_USER= \
+    MYSQL_PASSWORD= \
+    \
+    mysql:latest <container_name >-e <root_password >-e <database_name >-e <user_name >-e <user_password >-p <host_port >:3306
