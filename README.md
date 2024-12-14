@@ -38,8 +38,8 @@ A full-stack CRUD (Create, Read, Update, Delete) application built with React, N
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/your-project-name.git
-cd your-project-name
+git clone https://github.com/abhisheksmandal/crud-project-mysql-docker.git
+cd crud-project-mysql-docker
 ```
 
 ### 2. Environment Configuration
