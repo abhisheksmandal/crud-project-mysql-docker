@@ -136,8 +136,16 @@ npm run dev
 ```bash
 # Backend (in another terminal)
 cd backend
+# Option 1: Run the default start script
 npm run start
 ```
+
+```bash
+# OR
+cd backend
+# Option 2: Use nodemon for automatic restarts during development
+npx nodemon server.js
+``` 
 
 #### Production Build
 
